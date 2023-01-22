@@ -1,0 +1,96 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h3 {margin: 0; padding: 0}
+
+.container {
+    background: #0BC7DA;
+    padding-top: 1em;
+}
+
+.wrapper {
+    width: 1099px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box-item {
+    width: calc(50% - 1em);
+    min-height: 150px;
+    margin-bottom: 1em;
+    padding: 1.5em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 6px;
+}
+
+.box-item > .i-service, .view-info {
+    display: flex;
+}
+
+.box-item > .i-service {
+    width: 20%;
+    justify-content: center;
+}
+
+.box-item > .i-service > [class*="fa-"] {
+    font-size: 2em;
+}
+
+.box-item > .view-info {
+    width: 80%;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.box-item > .view-info > h3 {
+    color: coral;
+    font-size: 1.25em;
+}
+
+.box-item > i[class*="fa-"] {
+    font-size: 2em;
+    color: grey;
+}
+
+@media (max-width: 991.98px) {
+    .box-item {
+        width: calc(50% - 1em);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .box-item {
+        width: calc(50% - 1em);
+        flex-direction: column;
+    }
+    .box-item > .i-service {
+        margin: 2em;
+    }
+    .box-item > .view-info > h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .box-item {
+        width: 100%;
+        margin: 0.5em 1em;
+        flex-direction: column;
+    }
+    .box-item > .i-service {
+        margin: 2em;
+    }
+    .box-item > .view-info > h3 {
+        text-align: center;
+    }
+}
