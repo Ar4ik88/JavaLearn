@@ -1,0 +1,71 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container > h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.box-item {
+    width: calc(25% - 1em);
+    min-height: 480px;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 0px 2px 1px slategrey;
+}
+
+.box-item > h4 {
+    color: coral;
+    font-size: 1.25em;
+}
+
+.box-item > i[class*="fa-"] {
+    font-size: 2em;
+    color: grey;
+}
+
+.box-item > span > a {
+    display: block;
+    background: lightseagreen;
+    color: white;
+    padding: 1em 3em;
+    text-decoration: none;
+    transition-delay: 150ms;
+}
+
+.box-item > span > a:visited {
+    color: white;
+}
+
+@media (max-width: 991.98px) {
+    .box-item {
+        width: calc(25% - 1em);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .box-item {
+        width: calc(50% - 1em);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .box-item {
+        width: 100%;
+        margin: 0.5em 1em;
+    }
+}
